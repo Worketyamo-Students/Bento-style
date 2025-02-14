@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Bento style</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --inter: "Inter", serif;
+            --color-red: #F35034;
+            --white: #FFFFFF;
+            --color-dark: #C0C0C0;
+            --color-secondary: #161616;
+            --color-black: #1B1B1B;
+            --color-roundcolor: #262626;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-Inter bg-black box-border p-4 text-white">
+
+    <!-- Start of navbar -->
+
+    <header>
+        <nav class="flex">
+            <div><img src="./Assets/Images/Logo.svg" alt=""></div>
+            <div class="flex flex-row justify-between border rounded-[22px] border-roundcolor w-[300px]">
+                <div class="text-red mt-[.5rem] ml-[1rem] font-[700]">ABOUT</div>
+                <div><img class="mt-[.5rem] mr-[1rem]" src="./Assets/Images/hamburger.svg" alt=""></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- End of navbar -->
+
+    <!-- Start of body -->
+
+    <section class="border rounded-[14px] border-roundcolor mt-[1rem]">
+       <div class="p-4 flex flex-col gap-[1rem]">
+        <div class="flex flex-row border place-items-center gap-[.5rem] rounded-[14px] border-roundcolor w-[125px] h-[21px]">
+            <div><img class="ml-[.5rem]" src="./Assets/Images/dot.svg" alt=""></div>
+            <div class="font-[500] text-[9px] text-dark">AVAILABLE FOR JOB</div>
+        </div>
+
+        <div class="font-[500] text-[16px] text-dark">UI/UX Designer</div>
+
+        <div><img src="./Assets/Images/elle.svg" alt=""></div>
+       </div>
+    </section>
+
 </body>
+
 </html>
