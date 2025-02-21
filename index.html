@@ -28,12 +28,12 @@
 
     <header>
         <nav class="flex">
-            <div><img class="lg:w-[80px] lg:h-[60px]" src="./Assets/Images/Logo.svg" alt=""></div>
-            <div class="flex flex-row justify-between border rounded-[22px] border-roundcolor w-[360px] lg:w-[1170px] lg:h-[64px] lg:place-items-center lg:p-[2rem]">
-                <div class="text-red mt-[.5rem] ml-[1rem] font-[700] lg:mt-[0] lg:ml-[0]">ABOUT</div>
-                <div class="hidden lg:inline">PORTFOLIO</div>
-                <div class="hidden lg:inline">CONTACT</div>
-                <div class="lg:hidden"><img class="mt-[.5rem] mr-[1rem]" src="./Assets/Images/hamburger.svg" alt=""></div>
+            <div><img class="lg:h-[60px]" src="./Assets/Images/Logo.svg" alt=""></div>
+            <div class="flex flex-row justify-between border rounded-[48px] border-roundcolor w-[360px] lg:w-full lg:h-[64px] lg:place-items-center lg:p-[2rem]">
+                <a class="hover:underline text-red mt-[.5rem] ml-[1rem] font-[700] lg:mt-[0] lg:ml-[0]">ABOUT</a>
+                <a class="hover:underline hidden lg:inline">PORTFOLIO</a>
+                <a class="hover:underline hidden lg:inline">CONTACT</a>
+                <a class="lg:hidden"><img class="mt-[.5rem] mr-[1rem]" src="./Assets/Images/hamburger.svg" alt=""></a>
             </div>
         </nav>
     </header>
@@ -43,179 +43,323 @@
     <!-- Start of body -->
 
     <section class="border rounded-[14px] border-roundcolor mt-[1rem]">
-        <div class="p-4 flex flex-col gap-[1rem] shadow-2xl">
-            <div class="flex flex-row border place-items-center gap-[.5rem] rounded-[14px] border-roundcolor w-[125px] h-[21px]">
+        <div class="p-4 flex flex-col gap-[1rem] shadow-2xl lg:p-[2rem]">
+            <div class="flex flex-row border place-items-center gap-[.5rem] rounded-[14px] border-roundcolor w-[125px] h-[21px] lg:hidden">
                 <div><img class="ml-[.5rem]" src="./Assets/Images/dot.svg" alt=""></div>
                 <div class="font-[500] text-[9px] text-dark">AVAILABLE FOR JOB</div>
             </div>
 
-            <div class="font-[500] text-[16px] text-dark">UI/UX Designer</div>
-
-            <div><img src="./Assets/Images/elle.svg" alt=""></div>
-            <div class="font-[600] text-[24px]">I’m Zainab Nisa</div>
-            <div class="font-[400] text-[16px] text-dark">
-                <p>I design digital products with <br>
-                    great experience.</p>
-            </div>
-
-            <div class="flex gap-[.5rem]">
-                <div class="flex flex-row">
-                    <div
-                        class="border rounded-bl-[5.44px] rounded-tl-[5.44px] w-[84px] h-[32.67px] content-center bg-red border-[#161616]">
-                        <button class="ml-[1.5rem] text-[11px] font-[400]">Hire me</button>
+           <div class="lg:flex lg:flex-row lg:justify-between lg:p-[.5rem]">
+            <div class="lg:flex lg:flex-col lg:gap-[1rem]">
+                <div class="font-[500] text-[16px] text-dark">UI/UX Designer</div>
+    
+                <div class="lg:hidden mt-[2rem]"><img src="./Assets/Images/elle.svg" alt=""></div>
+                <div class="font-[600] text-[24px] mt-[2rem]">I’m Zainab Nisa</div>
+                <div class="font-[400] text-[16px] text-dark mt-[1rem]">
+                    <p>I design digital products with <br>
+                        great experience.</p>
+                </div>
+    
+                <div class="flex gap-[.5rem] mt-[1rem]">
+                    <div class="flex flex-row">
+                        <div
+                            class="border rounded-bl-[5.44px] rounded-tl-[5.44px] w-[84px] h-[32.67px] content-center bg-red border-[#161616]">
+                            <button class="ml-[1.5rem] text-[11px] font-[400]">Hire me</button>
+                        </div>
+                        <div
+                            class="border rounded-br-[5.44px] rounded-tr-[5.44px] w-[28px] h-[32.67px] content-center bg-red border-[#161616]">
+                            <button class="ml-[.5rem] text-[11px] font-[400]"><img src="./Assets/Images/plus.svg"
+                                    alt=""></button>
+                        </div>
                     </div>
-                    <div
-                        class="border rounded-br-[5.44px] rounded-tr-[5.44px] w-[28px] h-[32.67px] content-center bg-red border-[#161616]">
-                        <button class="ml-[.5rem] text-[11px] font-[400]"><img src="./Assets/Images/plus.svg"
-                                alt=""></button>
+                    <div class="flex flex-row">
+                        <div
+                            class="border rounded-bl-[5.44px] rounded-tl-[5.44px] w-[90px] h-[35px] content-center bg-black border-roundcolor">
+                            <button class="ml-[1.5rem] text-[11px] font-[400]">Copy Email</button>
+                        </div>
+                        <div
+                            class="border rounded-br-[5.44px] rounded-tr-[5.44px] w-[28px] h-[35px] content-center bg-black border-roundcolor">
+                            <button class="ml-[.5rem] text-[11px] font-[400]"><img src="./Assets/Images/cpy.svg"
+                                    alt=""></button>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-row">
-                    <div
-                        class="border rounded-bl-[5.44px] rounded-tl-[5.44px] w-[90px] h-[35px] content-center bg-black border-roundcolor">
-                        <button class="ml-[1.5rem] text-[11px] font-[400]">Copy Email</button>
+               </div>
+    
+                <div class="hidden lg:flex lg:flex-col lg:gap-[4rem]">
+                    <div class="flex flex-row border place-items-center gap-[.5rem] rounded-[14px] border-roundcolor w-[125px] h-[21px]">
+                        <div><img class="ml-[.5rem]" src="./Assets/Images/dot.svg" alt=""></div>
+                        <div class="font-[500] text-[9px] text-dark">AVAILABLE FOR JOB</div>
                     </div>
-                    <div
-                        class="border rounded-br-[5.44px] rounded-tr-[5.44px] w-[28px] h-[35px] content-center bg-black border-roundcolor">
-                        <button class="ml-[.5rem] text-[11px] font-[400]"><img src="./Assets/Images/cpy.svg"
-                                alt=""></button>
-                    </div>
+                    <img src="./Assets/Images/elle.svg" alt="">
                 </div>
-            </div>
+           </div>
         </div>
     </section>
 
     <!-- End of section1 -->
 
-    <section class="flex flex-col border rounded-[14px] border-roundcolor mt-[1rem]">
-        <div class="p-4 flex flex-col gap-[1rem]">
-            <div class="flex flex-row gap-[0.5rem] mb-[1rem]">
-                <div class="mt-[0.5rem]"><img src="./Assets/Images/dot2.svg" alt=""></div>
-                <div class="font-[500] text-[16px] text-dark">
-                    <p>Recent Work</p>
+    <div class="lg:hidden block">
+        <section class="flex flex-col border rounded-[14px] border-roundcolor mt-[1rem]">
+            <div class="p-4 flex flex-col gap-[1rem]">
+                <div class="flex flex-row gap-[0.5rem] mb-[1rem]">
+                    <div class="mt-[0.5rem]"><img src="./Assets/Images/dot2.svg" alt=""></div>
+                    <div class="font-[500] text-[16px] text-dark">
+                        <p>Recent Work</p>
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h1 class="text-red font-[500] text-[16px]">Product designer</h1>
+                        <p class="text-dark text-[15px]">2023 - Present</p>
+                    </div>
+                    <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h1 class="font-[500] text-[16px]">UI/UX designer</h1>
+                        <p class="text-dark text-[15px]">2021 - 2022</p>
+                    </div>
+                    <div class="mt-[0.5rem] text-dark text-[15px]">Google</div>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h1 class="font-[500] text-[16px]">Product designer</h1>
+                        <p class="text-dark text-[15px]">2023 - Present</p>
+                    </div>
+                    <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h1 class="font-[500] text-[16px]">Product designer</h1>
+                        <p class="text-dark text-[15px]">2023 - Present</p>
+                    </div>
+                    <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
                 </div>
             </div>
-            <div class="flex justify-between">
-                <div>
-                    <h1 class="text-red font-[500] text-[16px]">Product designer</h1>
-                    <p class="text-dark text-[15px]">2023 - Present</p>
-                </div>
-                <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
+        </section>
+    
+        <!-- End of section2 -->
+    
+        <!-- Start of section3 -->
+    
+        <div class="flex flex-col place-items-center">
+            <div
+            class="bg-gradient-to-tr from-[#E63E21] from-10%  to-[#33130E] border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-[395px] h-[82px]">
+            <p class="font-[500] text-[14px] text-dark">Product design</p>
+        </div>
+        <div class="flex flex-row gap-[0.5rem]">
+            <div
+                class="border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-[190px] h-[82px]">
+                <p class="font-[500] text-[14px] text-dark">User Experience</p>
             </div>
-            <div class="flex justify-between">
-                <div>
-                    <h1 class="font-[500] text-[16px]">UI/UX designer</h1>
-                    <p class="text-dark text-[15px]">2021 - 2022</p>
-                </div>
-                <div class="mt-[0.5rem] text-dark text-[15px]">Google</div>
-            </div>
-            <div class="flex justify-between">
-                <div>
-                    <h1 class="font-[500] text-[16px]">Product designer</h1>
-                    <p class="text-dark text-[15px]">2023 - Present</p>
-                </div>
-                <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
-            </div>
-            <div class="flex justify-between">
-                <div>
-                    <h1 class="font-[500] text-[16px]">Product designer</h1>
-                    <p class="text-dark text-[15px]">2023 - Present</p>
-                </div>
-                <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
+            <div
+                class="bg-gradient-to-bl from-[#1B1B1B] via-[#1B1B1B] to-[#E63E21] border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-[190px] h-[82px]">
+                <p class="font-[500] text-[14px] text-dark">NoCode develop</p>
             </div>
         </div>
-    </section>
-
-    <!-- End of section2 -->
-
-    <!-- Start of section3 -->
-
-    <div class="flex flex-col place-items-center">
-        <div
-        class="bg-gradient-to-tr from-[#E63E21] from-10%  to-[#33130E] border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-[395px] h-[82px]">
-        <p class="font-[500] text-[14px] text-dark">Product design</p>
-    </div>
-    <div class="flex flex-row gap-[0.5rem]">
-        <div
-            class="border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-[190px] h-[82px]">
-            <p class="font-[500] text-[14px] text-dark">User Experience</p>
         </div>
-        <div
-            class="bg-gradient-to-bl from-[#1B1B1B] via-[#1B1B1B] to-[#E63E21] border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-[190px] h-[82px]">
-            <p class="font-[500] text-[14px] text-dark">NoCode develop</p>
-        </div>
-    </div>
-    </div>
-
-    <section class="border rounded-[14px] border-roundcolor mt-[1rem]">
-        <div class="flex flex-col gap-[2rem]">
-            <div class="flex justify-between place-items-center p-4">
-                <div>
-                    <h1 class="font-[500] text-[16px]">iOS Mobile app</h1>
-                    <p class="text-dark text-[15px]">Product develop</p>
+    
+        <section class="border rounded-[14px] border-roundcolor mt-[1rem]">
+            <div class="flex flex-col gap-[2rem]">
+                <div class="flex justify-between place-items-center p-4">
+                    <div>
+                        <h1 class="font-[500] text-[16px]">iOS Mobile app</h1>
+                        <p class="text-dark text-[15px]">Product develop</p>
+                    </div>
+                    <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
+                            src="Assets/Images/fleche.svg" alt=""></div>
                 </div>
-                <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
-                        src="Assets/Images/fleche.svg" alt=""></div>
-            </div>
-            <div class="place-items-center">
-                <img src="Assets/Images/phone.svg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- end of section3 -->
-
-    <!-- section4 -->
-
-    <section class="border rounded-[14px] border-roundcolor mt-[1rem] p-4">
-
-        <div class="flex flex-col gap-[2rem]">
-            <div class="flex justify-between place-items-center">
-                <div>
-                    <h1 class="font-[500] text-[16px]">AI Music product</h1>
-                    <p class="text-dark text-[15px]">UX Case study</p>
+                <div class="place-items-center">
+                    <img src="Assets/Images/phone.svg" alt="">
                 </div>
-                <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
-                        src="Assets/Images/fleche.svg" alt=""></div>
             </div>
-            <div class="place-items-center">
-                <div class="relative bg-cover bg-center bg-no-repeat w-[145px] h-[150px]"
-                    style="background-image: url(Assets/Images/Music.svg);">
-                    <div class="relative bg-cover bg-center bg-no-repeat w-[139px] h-[146px]"
-                        style="background-image: url(Assets/Images/Music2.svg);">
+        </section>
+    
+        <!-- end of section3 -->
+    
+        <!-- section4 -->
+    
+        <section class="border rounded-[14px] border-roundcolor mt-[1rem] p-4">
+    
+            <div class="flex flex-col gap-[2rem]">
+                <div class="flex justify-between place-items-center">
+                    <div>
+                        <h1 class="font-[500] text-[16px]">AI Music product</h1>
+                        <p class="text-dark text-[15px]">UX Case study</p>
+                    </div>
+                    <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
+                            src="Assets/Images/fleche.svg" alt=""></div>
+                </div>
+                <div class="place-items-center">
+                    <div class="relative bg-cover bg-center bg-no-repeat w-[145px] h-[150px]"
+                        style="background-image: url(Assets/Images/Music.svg);">
+                        <div class="relative bg-cover bg-center bg-no-repeat w-[139px] h-[146px]"
+                            style="background-image: url(Assets/Images/Music2.svg);">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </section>
-
-    <!-- section5 -->
-
-    <section class="border rounded-[14px] border-roundcolor mt-[1rem] p-4">
-
-        <div class="flex flex-col gap-[2rem]">
-            <div class="flex justify-between place-items-center">
-                <div>
-                    <h1 class="font-[500] text-[16px]">AI Music product</h1>
-                    <p class="text-dark text-[15px]">UX Case study</p>
+    
+        </section>
+    
+        <!-- section5 -->
+    
+        <section class="border rounded-[14px] border-roundcolor mt-[1rem] p-4">
+    
+            <div class="flex flex-col gap-[2rem]">
+                <div class="flex justify-between place-items-center">
+                    <div>
+                        <h1 class="font-[500] text-[16px]">AI Music product</h1>
+                        <p class="text-dark text-[15px]">UX Case study</p>
+                    </div>
+                    <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
+                            src="Assets/Images/fleche.svg" alt=""></div>
                 </div>
-                <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
-                        src="Assets/Images/fleche.svg" alt=""></div>
-            </div>
-            <div class="place-items-center">
-                <div class="relative bg-cover bg-center bg-no-repeat w-[145px] h-[150px]"
-                    style="background-image: url(Assets/Images/map.svg);">
-                    <div class="relative bg-cover bg-center bg-no-repeat w-[139px] h-[146px]">
-                        <img class="ml-[2rem]" src="Assets/Images/map2.svg" alt="">
+                <div class="place-items-center">
+                    <div class="relative bg-cover bg-center bg-no-repeat w-[145px] h-[150px]"
+                        style="background-image: url(Assets/Images/map.svg);">
+                        <div class="relative bg-cover bg-center bg-no-repeat w-[139px] h-[146px]">
+                            <img class="ml-[2rem]" src="Assets/Images/map2.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
+    
+        </section>
+    
+    </div>
+
+    <!-- itergrated responsive code -->
+
+    <section class="hidden lg:inline flex flex-col">
+        <div class="flex flex-row justify-evenly gap-[3rem]">
+          <div class="flex-1">
+              <div class="flex flex-col">
+                  <div class="p-4 flex flex-col gap-[1rem] border rounded-[14px] border-roundcolor mt-[1rem]">
+                      <div class="flex flex-row gap-[0.5rem] mb-[1rem]">
+                          <div class="mt-[0.5rem]"><img src="./Assets/Images/dot2.svg" alt=""></div>
+                          <div class="font-[500] text-[16px] text-dark">
+                              <p>Recent Work</p>
+                          </div>
+                      </div>
+                      <div class="flex justify-between">
+                          <div>
+                              <h1 class="text-red font-[500] text-[16px]">Product designer</h1>
+                              <p class="text-dark text-[15px]">2023 - Present</p>
+                          </div>
+                          <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
+                      </div>
+                      <div class="flex justify-between">
+                          <div>
+                              <h1 class="font-[500] text-[16px]">UI/UX designer</h1>
+                              <p class="text-dark text-[15px]">2021 - 2022</p>
+                          </div>
+                          <div class="mt-[0.5rem] text-dark text-[15px]">Google</div>
+                      </div>
+                      <div class="flex justify-between">
+                          <div>
+                              <h1 class="font-[500] text-[16px]">Product designer</h1>
+                              <p class="text-dark text-[15px]">2023 - Present</p>
+                          </div>
+                          <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
+                      </div>
+                      <div class="flex justify-between">
+                          <div>
+                              <h1 class="font-[500] text-[16px]">Product designer</h1>
+                              <p class="text-dark text-[15px]">2023 - Present</p>
+                          </div>
+                          <div class="mt-[0.5rem] text-dark text-[15px]">Figma</div>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="flex flex-col gap-[2rem] border rounded-[14px] border-roundcolor mt-[1rem]">
+                  <div class="flex justify-between place-items-center p-4">
+                      <div>
+                          <h1 class="font-[500] text-[16px]">iOS Mobile app</h1>
+                          <p class="text-dark text-[15px]">Product develop</p>
+                      </div>
+                      <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
+                              src="Assets/Images/fleche.svg" alt=""></div>
+                  </div>
+                  <div class="place-items-center">
+                      <img src="Assets/Images/phone.svg" alt="">
+                  </div>
+              </div>
+             </div>
+      
+             <div class="flex-1 flex flex-col gap-[2rem]">
+                <div class="w-[700px]">
+                  <div class="flex flex-col place-items-center">
+                      <div
+                      class="bg-gradient-to-tr from-[#262626] from-70%  to-[#E63E21] p-[1px] border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-full h-[82px]">
+                      <div class="font-[500] w-full h-full rounded-[8px] flex justify-center items-center text-[14px] text-dark bg-gradient-to-tr from-[#1B1B1B] from-60%  to-[#33130E] ">Product design</div>
+                  </div>
+                  <div class="flex flex-row gap-[0.5rem]">
+                      <div
+                          class="border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-[345px] h-[82px]">
+                          <p class="font-[500] text-[14px] text-dark">User Experience</p>
+                      </div>
+                      <div
+                          class="bg-gradient-to-bl from-[#1B1B1B] via-[#1B1B1B] to-[#E63E21] border rounded-[8px] border-roundcolor mt-[1rem] content-center place-items-center w-[345px] h-[82px]">
+                          <p class="font-[500] text-[14px] text-dark">NoCode develop</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+    
+                <section class="border rounded-[14px] border-roundcolor mt-[1rem] p-4">
+    
+                  <div class="flex flex-col gap-[2rem]">
+                      <div class="flex justify-between place-items-center">
+                          <div>
+                              <h1 class="font-[500] text-[16px]">AI Music product</h1>
+                              <p class="text-dark text-[15px]">UX Case study</p>
+                          </div>
+                          <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
+                                  src="Assets/Images/fleche.svg" alt=""></div>
+                      </div>
+                      <div class="place-items-center">
+                          <div class="relative bg-cover bg-center bg-no-repeat w-[145px] h-[150px]"
+                              style="background-image: url(Assets/Images/Music.svg);">
+                              <div class="relative bg-cover bg-center bg-no-repeat w-[139px] h-[146px]"
+                                  style="background-image: url(Assets/Images/Music2.svg);">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          
+              </section>
+    
+                <div class="border rounded-[14px] border-roundcolor mt-[1rem] p-4">
+    
+                  <div class="flex flex-col gap-[2rem]">
+                      <div class="flex justify-between place-items-center">
+                          <div>
+                              <h1 class="font-[500] text-[16px]">AI Music product</h1>
+                              <p class="text-dark text-[15px]">UX Case study</p>
+                          </div>
+                          <div class="bg-red w-[22px] h-[22px] rounded-full flex"><img class="w-[8.8px] ml-[6px]"
+                                  src="Assets/Images/fleche.svg" alt=""></div>
+                      </div>
+                      <div class="place-items-center">
+                          <div class="relative bg-cover bg-center bg-no-repeat w-[145px] h-[150px]"
+                              style="background-image: url(Assets/Images/map.svg);">
+                              <div class="relative bg-cover bg-center bg-no-repeat w-[139px] h-[146px]">
+                                  <img class="ml-[2rem]" src="Assets/Images/map2.svg" alt="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          
+              </div>
+          
+             </div>
         </div>
+      </section>
 
-    </section>
-
-    <footer class="border rounded-[14px] border-roundcolor mt-[1rem] p-4 place-items-center flex flex-col gap-[2rem]">
+    <footer class="border rounded-[14px] border-roundcolor mt-[1rem] p-4 place-items-center flex flex-col gap-[2rem] lg:flex-row lg:justify-between lg:flex-row-reverse">
         <div class="flex flex-row border place-items-center gap-[.5rem] rounded-[14px] border-roundcolor w-[125px] h-[21px]">
             <div><img class="ml-[.5rem]" src="./Assets/Images/dot.svg" alt=""></div>
             <div class="font-[500] text-[9px] text-dark">AVAILABLE FOR JOB</div>
